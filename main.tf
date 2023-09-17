@@ -1,3 +1,4 @@
+# Author: Matthew Sheckell
 # Configure the Azure provider
 terraform {
   required_providers {
