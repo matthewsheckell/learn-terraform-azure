@@ -30,6 +30,12 @@ resource "azurerm_resource_group" "rg" {
   }
 }
 
+# Create second resource group
+resource "azurerm_resource_group" "github" {
+  name = "github"
+  location = "eastus"
+}
+
 # Create a virtual network
 resource "azurerm_virtual_network" "vnet" {
   name                = "myTFVnet"
