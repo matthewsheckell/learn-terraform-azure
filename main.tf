@@ -6,7 +6,12 @@ terraform {
       version = "~> 3.0.2"
     }
   }
-  required_version = ">= 1.1.0"
+  cloud {
+    organization = "MatthewAzure"
+    workspaces {
+      name = "learn-terraform-azure"
+    }
+  }
 }
 
 provider "azurerm" {
